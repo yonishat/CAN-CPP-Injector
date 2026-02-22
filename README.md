@@ -14,7 +14,7 @@ The tool was created to simulate real-world hacking scenarios on vehicle network
 
 **Payload Identification:** Isolated specific controller IDs, such as 0x19B for the Door Control Unit. I identified that modifying Byte 2 to `0x0E` triggered the unlock actuator.
 
-## Key Objective Achieved:
+## Key Objectives Achieved:
 
 I built this interactive C++ tool to bypass high-level APIs to write raw binary frames directly to the network interface using Linux socket programming.
 
