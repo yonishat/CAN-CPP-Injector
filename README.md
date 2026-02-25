@@ -8,7 +8,7 @@ The tool was created to simulate real-world hacking scenarios on vehicle network
 
 **Reconnaissance:** I utilized `candump` to monitor the `vcan0` interface and establish a baseline of background CAN traffic.
 
-<img width="1091" height="387" alt="vcan0_CAN-dump" src="https://github.com/user-attachments/assets/8959e93c-3ae5-4439-8b89-ed52c0e26c0f" />
+<img src="https://github.com/yonishat/CAN-CPP-Injector/blob/118a5ec7c5ee77ec7605a9d7dddd3be774736178/include/Normal_ICSim-candump.png"/>
 
 **Isolation & Fuzzing:** I used `cansniffer` to filter out static packets. By physically triggering the virtual vehicle controls (unlocking doors, spiking speedometer) while monitoring the sniffer, I was able to correlate physical actions to specific ID state changes.
 
@@ -18,7 +18,8 @@ The tool was created to simulate real-world hacking scenarios on vehicle network
 
 I built this interactive C++ tool to bypass high-level APIs to write raw binary frames directly to the network interface using Linux socket programming.
 
-<img width="401" height="282" alt="attacking" src="https://github.com/user-attachments/assets/5cc00754-480f-4130-bf8f-b0fad182e107" /> <img width="696" height="366" alt="attacked-door" src="https://github.com/user-attachments/assets/dd624e5b-0602-451e-83cb-ca5bf6f25fe9" />
+<img src="https://github.com/yonishat/CAN-CPP-Injector/blob/118a5ec7c5ee77ec7605a9d7dddd3be774736178/include/Attack_menu_1.png"/>
+<img src="https://github.com/yonishat/CAN-CPP-Injector/blob/118a5ec7c5ee77ec7605a9d7dddd3be774736178/include/ICSim_attack-display.png"/>
 
 ## 🛠️ Prerequisites & Build Instructions
 
